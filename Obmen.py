@@ -9,7 +9,7 @@ def exchange():
 
     if code:
         try:
-            response = requests.get('https://opem.er-api.com/v6/latest/USD')
+            response = requests.get('https://open.er-api.com/v6/latest/USD')
             response.raise_for_status()
             data = response.json()
             if code in data['rates']:
